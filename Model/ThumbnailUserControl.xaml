@@ -1,0 +1,18 @@
+﻿<UserControl x:Class="dogpixels_viewer.Model.ThumbnailUserControl"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:dogpixels_viewer.Model"
+             mc:Ignorable="d" 
+             d:DesignHeight="256" d:DesignWidth="256">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*" />
+            <RowDefinition Height="20" />
+        </Grid.RowDefinitions>
+
+        <Image x:Name="UiThumbnailImage" Grid.Row="0" />
+        <TextBlock x:Name="UiFileName" Grid.Row="1" />
+    </Grid>
+</UserControl>

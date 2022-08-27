@@ -1,0 +1,87 @@
+﻿<Window x:Class="dogpixels_viewer.ConfigurationWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:dogpixels_viewer"
+        mc:Ignorable="d"
+        Title="{StaticResource ConfigWindowTitle}" Height="240" Width="600">
+    <Grid Margin="10">
+        <Grid.Resources>
+            <Style TargetType="Button">
+                <Setter Property="Margin" Value="5" />
+            </Style>
+            <Style TargetType="TextBlock">
+                <Setter Property="VerticalAlignment" Value="Center" />
+            </Style>
+            <Style TargetType="TextBox">
+                <Setter Property="Margin" Value="5" />
+            </Style>
+        </Grid.Resources>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*" />
+            <RowDefinition Height="40" />
+        </Grid.RowDefinitions>
+
+        <StackPanel Grid.Row="0">
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="170" />
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+                <TextBlock Text="{StaticResource ProfileName}" Grid.Column="0" />
+                <TextBox x:Name="ProfileName" Grid.Column="1" />
+            </Grid>
+
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="170" />
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="100" />
+                </Grid.ColumnDefinitions>
+                <TextBlock Text="{StaticResource RootDirectory}" Grid.Column="0" />
+                <TextBox x:Name="RootDirectory" Grid.Column="1" />
+                <Button Content="{StaticResource BrowseButton}" Grid.Column="2" Click="Browse_Click" />
+            </Grid>
+
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="170" />
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+                <TextBlock Text="{StaticResource ImageBoardAccount}" Grid.Column="0" />
+                <TextBox x:Name="ImageBoardAccount" Grid.Column="1" />
+            </Grid>
+
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="170" />
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+                <TextBlock Text="{StaticResource ImageBoardApi}" Grid.Column="0" />
+                <TextBox x:Name="ImageBoardApi" Grid.Column="1" />
+            </Grid>
+
+            <Grid Margin="0, 4">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="174" />
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+                <TextBlock Text="{StaticResource StoreTagsInFiles}" Grid.Column="0"/>
+                <CheckBox x:Name="StoreTagsInFiles" Grid.Column="1"/>
+            </Grid>
+        </StackPanel>
+
+        <Grid Grid.Row="1">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="100" />
+                <ColumnDefinition Width="100" />
+            </Grid.ColumnDefinitions>
+            <Button Content="{StaticResource CancelButton}" Grid.Column="1" Click="Cancel_Click" />
+            <Button Content="{StaticResource OKButton}" Grid.Column="2" Click="OK_Click" />
+        </Grid>
+    </Grid>
+    
+    <!-- <TextBox Name="MaxPossibleValues" /> -->
+</Window>

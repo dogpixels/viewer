@@ -1,0 +1,29 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" 
+                    xmlns:system="clr-namespace:System;assembly=mscorlib">
+
+    <system:String x:Key="ConfigWindowTitle">Configuration Editor</system:String>
+    <system:String x:Key="OKButton">OK</system:String>
+    <system:String x:Key="CancelButton">Cancel</system:String>
+    <system:String x:Key="CloseButton">Close</system:String>
+    <system:String x:Key="BrowseButton">Browse...</system:String>
+    <system:String x:Key="MainWindowTitle">dogpixels viewer</system:String>
+    <system:String x:Key="AttributionsTitle">Third Party Attributions</system:String>
+    <system:String x:Key="ScanDirectory">Scan Directory</system:String>
+    <system:String x:Key="FilesInDatabase">files in database</system:String>
+    <system:String x:Key="RetrieveTagsFromImageBoard">Retrieve tags from Image Board API</system:String>
+    <system:String x:Key="Search">Search</system:String>
+    <system:String x:Key="Browse">Browse</system:String>
+    <system:String x:Key="ProfileName">Profile Name</system:String>
+    <system:String x:Key="RootDirectory">Gallery root directory</system:String>
+    <system:String x:Key="ImageBoardAccount">Image Board Account Name</system:String>
+    <system:String x:Key="ImageBoardApi">Image Board API</system:String>
+    <system:String x:Key="ApiHits">queries succeeded</system:String>
+    <system:String x:Key="ApiMisses">queries failed</system:String>
+    <system:String x:Key="ApiQueries">total queried</system:String>
+    <system:String x:Key="StoreTagsInFiles">Attempt to store tags in files</system:String>
+    <system:String x:Key="FilesTagged">files tagged</system:String>
+    <system:String x:Key="BrowserUntaggedFiles">untagged files</system:String>
+    <system:String x:Key="DisplayThumbnails">render thumbnails</system:String>
+    <system:String x:Key="Matches">matches</system:String>
+</ResourceDictionary>
